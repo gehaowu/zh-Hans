@@ -37,12 +37,7 @@
                   "LEFT":"我的博客",
                   "RIGHT":"联系我"
               }
-          },
-          "bottomBar":{
-                  "ADDRESS":"16/38 Shoreline Drive Rhodes 2138 NSW， 澳大利亚",
-                  "EMAIL":"3dslayer@gmail.com",
-                  "PHONE":"+(61)405849585"
-              }
+          }
      },
      "resume":{
          "aboutMe":{
@@ -117,6 +112,9 @@
      },
      "contact":{
          "TITLE":"你想聘用我吗？",
-         "DOWNLOAD_BUTTON":"下载我的简历"
+         "DOWNLOAD_BUTTON": "下载我的简历",
+         "ADDRESS":"16/38 Shoreline Drive Rhodes 2138 NSW， 澳大利亚",
+         "EMAIL":"3dslayer@gmail.com",
+         "PHONE":"+(61)405849585"
      }
 }

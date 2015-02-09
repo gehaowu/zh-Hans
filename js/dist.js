@@ -43555,7 +43555,6 @@ angular.module('app')
       }]
   );
 'use strict';
-
 /* Controllers */
 angular.module('app')
   .controller('AppCtrl', ['$scope', '$translate', '$localStorage','$document','$timeout',
@@ -43572,7 +43571,8 @@ angular.module('app')
                 'opacity': alpha / 100
             }
         }
-        
+
+
         $scope.viewportfolio = function () {
             var projectContent = angular.element(document.getElementsByClassName("project-content"));
             $document.scrollToElementAnimated(projectContent, 0, 700).then(function() {
@@ -43585,7 +43585,7 @@ angular.module('app')
                 $scope.showDetail = false;
             });
         }
-
+      
         // angular translate
       $scope.langs = { en: 'flag-icon-au', cn: 'flag-icon-cn' };
         //default 'en'

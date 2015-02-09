@@ -38,12 +38,7 @@
                 "LEFT":"My blog",
                 "RIGHT":"Contact me"
             } 
-        },
-         "bottomBar":{
-             "ADDRESS":"16/38 Shoreline Drive Rhodes 2138 NSW, Australia",
-             "EMAIL":"3dslayer@gmail.com",
-             "PHONE":"+(61)405849585"
-         }
+        }
     },
     "resume":{
         "aboutMe":{
@@ -118,6 +113,9 @@
     },
     "contact":{
         "TITLE":"Do you want to hire me?",
-        "DOWNLOAD_BUTTON":"Download my CV"
+        "DOWNLOAD_BUTTON": "Download my CV",
+        "ADDRESS":"16/38 Shoreline Drive Rhodes 2138 NSW, Australia",
+        "EMAIL":"3dslayer@gmail.com",
+        "PHONE":"+(61)405849585"
     }
 }
