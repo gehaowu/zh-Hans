@@ -1,0 +1,27 @@
+﻿<!-- Logo -->
+<div class="me-logo">
+    <a href="#profile">
+        <div class="logo-content">
+            <h4 class="short"><span translate="header.logo.content.FIRSTNAME">Chang</span> 
+                <strong translate="header.logo.content.LASTNAME">Liu</strong>
+            </h4>
+            <span class="logo-caption" translate="header.logo.content.POSITION">Full-stack .NET/AngularJS Developer</span>
+        </div>
+    </a>
+</div>
+
+<!-- Navigation -->
+<ul class="nav me-nav">
+    <li du-scrollspy="profile"><a href="#profile" du-smooth-scroll><span translate="header.nav.menu.PROFILE">Profile</span><i class="fa fa-user"></i></a></li>
+    <li du-scrollspy="resume"><a href="#resume" du-smooth-scroll><span translate="header.nav.menu.RESUME">Resume</span><i class="fa fa-pencil"></i></a></li>
+    <li du-scrollspy="portfolio"><a href="#portfolio" du-smooth-scroll><span translate="header.nav.menu.PORTFOLIO">Portfolio</span><i class="fa fa-desktop"></i></a></li>
+    <li du-scrollspy="blog"><a href="#blog" du-smooth-scroll><span translate="header.nav.menu.BLOG">Latest Posts</span><i class="fa fa-comment"></i></a></li>
+    <li du-scrollspy="contact"><a href="#contact" du-smooth-scroll><span translate="header.nav.menu.CONTACT">Contact</span><i class="fa fa-phone"></i></a></li>
+    <li><a href data-ng-click="setLang(currentlangKey)">
+            <span translate="header.nav.menu.LANGUAGE">English</span>
+            <i class="flag-icon {{langs[currentlangKey]}}"></i>
+        </a></li>
+</ul>
+
+<!-- Copyright -->
+<span class="copyright hidden-md">© 2015 <b translate="header.COPYRIGHT">Chang Liu</b>.</span>

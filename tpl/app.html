@@ -1,0 +1,24 @@
+﻿
+<!-- Header  -->
+<header data-ng-include="'tpl/blocks/header.html'" id="nav-content" class="vertical-nav nav-black"></header>
+<!-- Header / End -->
+<!-- Page Content -->
+<div id="page-content">
+    <!-- Profile -->
+    <section id="profile" class="black" data-ng-include="'tpl/blocks/profile.html'"></section>
+    <!-- Profile / End -->
+    <!-- Resume -->
+    <section id="resume" ng-appear="resume" data-ng-include="'tpl/blocks/resume.html'"></section>
+    <!-- Resume / End -->
+    <!-- Portfolio -->
+    <section id="portfolio" ng-appear="portfolio" data-ng-include="'tpl/blocks/portfolio.html'"></section>
+    <!-- Portfjolo / End -->
+    <!-- Blog -->
+    <section id="blog" ng-appear="blog" data-ng-include="'tpl/blocks/blog.html'"></section>
+    <!-- Blog / End -->
+    <!-- Contact -->
+    <section id="contact" class="black" ng-appear="contact" data-ng-include="'tpl/blocks/contact.html'" resize-fix></section>
+    <!-- Contact / End -->
+
+</div>
+<!-- Page Content / End -->
