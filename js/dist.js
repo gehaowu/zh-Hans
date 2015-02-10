@@ -28034,13 +28034,10 @@ angular.module('ngAppear', [])
                         }
                     }
 
-                    scope.$on('ngAppear.reset', function () {
-                        scope[model] = appear(element);
-                    });
-                    angular.element(window).bind("scroll", function() {
-                        scope[model] = appear(element);
-                        scope.$apply();
-                    });
+                var resetEvent = scope.$on('ngAppear.reset', function () {
+                    scope[model] = appear(element);
+                    if (scope[model]) resetEvent();
+                });
                 }
             };
         }
@@ -43510,7 +43507,7 @@ angular.module('app')
     // Those urls are [prefix][langKey][suffix].
     $translateProvider.useStaticFilesLoader({
       prefix: 'l10n/',
-      suffix: '.js'
+      suffix: '.json'
     });
     // Tell the module what language to use by default
     $translateProvider.preferredLanguage('en');
@@ -43558,23 +43555,15 @@ angular.module('app')
       }]
   );
 'use strict';
-
 /* Controllers */
 angular.module('app')
   .controller('AppCtrl', ['$scope', '$translate', '$localStorage','$document','$timeout',
     function ($scope, $translate, $localStorage, $document, $timeout) {
         //Carousel.config
         $scope.myInterval = 5000;
-        //disable touch scroll when loading
-        $document.bind('touchstart', function(e) { e.preventDefault(); });
-        $document.bind('touchmove', function (e) { e.preventDefault(); });
-
         //loading 5 seconds
         $timeout(function() {
             $scope.loadingDone = true;
-            //undisable touch scroll when loading done
-            $document.unbind('touchstart');
-            $document.unbind('touchmove');
         }, 5000);
 
         $scope.editableAlpha = function (alpha) {
@@ -43582,7 +43571,8 @@ angular.module('app')
                 'opacity': alpha / 100
             }
         }
-        
+
+
         $scope.viewportfolio = function () {
             var projectContent = angular.element(document.getElementsByClassName("project-content"));
             $document.scrollToElementAnimated(projectContent, 0, 700).then(function() {
@@ -43595,12 +43585,11 @@ angular.module('app')
                 $scope.showDetail = false;
             });
         }
-
+      
         // angular translate
       $scope.langs = { en: 'flag-icon-au', cn: 'flag-icon-cn' };
         //default 'en'
-      $scope.currentlangKey = 'en';
-      $translate.use($scope.currentlangKey);
+      $scope.currentlangKey = $translate.proposedLanguage()||'en';
       $scope.setLang = function (langKey, $event) {
           if (langKey === 'en') {
               $scope.currentlangKey = 'cn';
@@ -43608,9 +43597,14 @@ angular.module('app')
               $scope.currentlangKey = 'en';
           }
           $translate.use($scope.currentlangKey);
-      };
+        };
+
+        angular.element(window).bind("scroll", function () {
+            if ($scope.loadingDone) $scope.$broadcast('ngAppear.reset');
+            $scope.$apply();
+        });
     }])
-    .value('duScrollDuration', 700)
+    .value('duScrollDuration', 300)
     .value('duScrollOffset', 0);
 angular.module('app')
   .directive('googleMap', ['uiLoad', 'uiGoogleMap', function (uiLoad, uiGoogleMap) {
@@ -43661,7 +43655,7 @@ angular.module('app')
                             //To make sure image has been loaded
                             var timeout = resizeFixed === true ? 0 : 2800;
                             $timeout(function() { checkPhotos(); }, timeout);
-                            scope.$broadcast('ngAppear.reset');
+                            if (!resizeFixed) scope.$broadcast('ngAppear.reset');
                             resizeFixed = true;
                         };
                         var w = angular.element($window);
@@ -43670,7 +43664,8 @@ angular.module('app')
                                 'h': w.height(),
                                 'w': w.width()
                             };
-                        };
+                    };
+
                         scope.$watch(scope.getWindowDimensions, function(newValue, oldValue) {
                             scope.resizable();
                         }, true);
