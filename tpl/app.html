@@ -1,12 +1,11 @@
-﻿
-<!-- Header  -->
-<header data-ng-include="'tpl/blocks/header.html'" id="nav-content" class="vertical-nav nav-black"></header>
-<!-- Header / End -->
-<!-- Page Content -->
+﻿<!-- Page Content -->
 <div id="page-content">
-    <!-- Profile -->
-    <section id="profile" class="black" data-ng-include="'tpl/blocks/profile.html'"></section>
-    <!-- Profile / End -->
+    <!-- Nav  -->
+    <nav class="navbar navbar-custom navbar-fixed-top" data-ng-include="'tpl/blocks/nav.html'" role="navigation" navbar-fix></nav>
+    <!-- Nav / End -->
+    <!-- Home  -->
+    <section id="home" ui-jq="wallpaper" ui-options="{source: 'images/backgrounds/home-bg.jpg'}" data-ng-include="'tpl/blocks/home.html'"></section>
+    <!-- Home/End -->
     <!-- Resume -->
     <section id="resume" ng-appear="resume" data-ng-include="'tpl/blocks/resume.html'"></section>
     <!-- Resume / End -->

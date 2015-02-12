@@ -1,0 +1,21 @@
+﻿<div class="container">
+    <div class="navbar-header">
+        <div class="logo hidden-xs"><div>Chang <span>Liu</span></div></div>
+    </div>
+    <div id="nav-menu" class="visible-xs" data-ng-click="isCollapsed = !isCollapsed"></div>
+    <div class="navbar-right" collapse="isCollapsed">
+        <ul class="nav navbar-nav">
+            <li du-scrollspy="home"><a href="#home" du-smooth-scroll><span translate="header.nav.menu.HOME">Home</span></a></li>
+            <li du-scrollspy="resume"><a href="#resume" du-smooth-scroll><span translate="header.nav.menu.RESUME">Resume</span></a></li>
+            <li du-scrollspy="portfolio"><a href="#portfolio" du-smooth-scroll><span translate="header.nav.menu.PORTFOLIO">Resume</span></a></li>
+            <li du-scrollspy="blog"><a href="#blog" du-smooth-scroll><span translate="header.nav.menu.BLOG">Blog</span></a></li>
+            <li du-scrollspy="contact"><a href="#contact" du-smooth-scroll><span translate="header.nav.menu.CONTACT">Contact</span></a></li>
+            <li>
+                <a href data-ng-click="setLang(currentlangKey)">
+                    <span translate="header.nav.menu.LANGUAGE">English</span>
+                    <i class="flag-icon {{langs[currentlangKey]}}"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -11,7 +11,7 @@
         "nav" : {
             "menu" : {
                 "LANGUAGE" : "中文",
-                "PROFILE": "个人简介",
+                 "HOME": "主页",
                 "RESUME":"简历",
                 "PORTFOLIO":"作品集",
                  "BLOG":"博客",
@@ -30,8 +30,8 @@
               "title":{
                   "PREFIX":"我是 ",
                    "NAME":"刘 畅",
-                   "TITLE":"全栈 ",
-                   "POSITION":".NET/AngularJS 工程师"
+                   "TITLE":"全栈 .NET/AngularJS ",
+                   "POSITION":"工程师"
               },
               "button":{
                   "LEFT":"我的博客",

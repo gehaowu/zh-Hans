@@ -11,7 +11,7 @@
         "nav" : {
             "menu" : {
                 "LANGUAGE" : "English",
-                 "PROFILE": "Profile",
+                 "HOME": "Home",
                  "RESUME":"Resume",
                  "PORTFOLIO":"Portfolio",
                  "BLOG":"Blog",
@@ -31,8 +31,8 @@
             "title":{
                 "PREFIX":"I am ",
                 "NAME":"Chang Liu",
-                "TITLE":"full-stack ",
-                "POSITION":".NET/AngularJS Developer"
+                "TITLE": "Full-stack .NET/AngularJS ",
+                "POSITION": "Developer"
             },
             "button":{
                 "LEFT":"My blog",
