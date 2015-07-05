@@ -1,0 +1,40 @@
+﻿{
+    "projects": [
+         {
+            "title": "Quad Services BDSystem",
+            "caption": "Web Application",
+            "bgPic": "projects/1/cover.png",
+            "detail": {
+                "title": "Quad Services Business Development System",
+                "date": "November 2014-Now",
+                "description": "● Single Page Application (SPA) based on AngularJS and Bootstrap.<br/>● Restful API based on ASP.NET WEB API 2, Entity Framework 6, Repository pattern and Owin OAuth.<br/>● Fully responsive interface and compatible with all different devices. <br/>● Implement Authentication with Microsoft Active Directory and AngularJS Routing.<br/>● AngularJS unit test with Jasmine and Karma.<br/>● Backend Unit testing with Moq and MSTest.",
+                "slides": [
+                    "projects/1/1.png",
+                    "projects/1/2.png",
+                    "projects/1/3.png",
+                    "projects/1/4.png",
+                    "projects/1/5.png"
+                ],
+                "link": "https://github.com/changLiuUNSW/BDSystem.git"
+            }
+        },
+        {
+            "title": "Quad Services Equipment System",
+            "caption": "Web Application",
+            "bgPic": "projects/2/cover.png",
+            "detail": {
+                "title": "Quad Services Equipment Management System",
+                "date": "December 2014 – January 2015",
+                "description": "● Single Page Application (SPA) based on AngularJS and Bootstrap.<br/>● Restful API based on ASP.NET WEB API 2 and Entity Framework 6.<br/>● Fully responsive interface and compatible with all different devices.",
+                "slides": [
+                    "projects/2/1.png",
+                    "projects/2/2.png",
+                    "projects/2/3.png",
+                    "projects/2/4.png",
+                    "projects/2/5.png"
+                ],
+                "link": "http://op.quadservices.com.au/equipment"
+            }
+        }
+    ]
+}
