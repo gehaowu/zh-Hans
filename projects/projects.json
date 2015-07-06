@@ -1,8 +1,8 @@
 ﻿{
     "projects": [
          {
-            "title": "Quad Services BDSystem",
-            "caption": "Web Application",
+            "title": "Quad Services",
+            "caption": "BDSystem",
             "bgPic": "projects/1/cover.png",
             "detail": {
                 "title": "Quad Services Business Development System",
@@ -19,8 +19,8 @@
             }
         },
         {
-            "title": "Quad Services Equipment System",
-            "caption": "Web Application",
+            "title": "Quad Services",
+            "caption": "Equipment System",
             "bgPic": "projects/2/cover.png",
             "detail": {
                 "title": "Quad Services Equipment Management System",
