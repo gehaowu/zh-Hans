@@ -35,6 +35,23 @@
                 ],
                 "link": "http://op.quadservices.com.au/equipment"
             }
+        },
+		{
+            "title": "Quad Services",
+            "caption": "Job Process System",
+            "bgPic": "projects/3/cover.png",
+            "detail": {
+                "title": "Quad Services Job Process System",
+                "date": "July 2014 – September 2014",
+                "description": "● Transferred from company existing legacy systems.<br/>● Backend based on ASP.NET MVC 4 and Enity Framework 6.<br/>● Frontend based on Bootstrap, MentroUI to create responsive interfaces which are compatible with all tablet devices.<br/>● Implement report system with Crystal report and Sharepoint.<br/>● Implement authentication with Microsoft Active Directory and MVC routing.",
+                "slides": [
+                    "projects/3/1.png",
+                    "projects/3/2.png",
+                    "projects/3/3.png",
+                    "projects/3/4.png"
+                ],
+                "link": "http://internal.quadservices.com.au/"
+            }
         }
     ]
 }
