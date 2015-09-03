@@ -36,8 +36,8 @@
 					color: "#2D333C"
 				}]
 			}],
-				c = 30.246228,
-				d = 120.068997,
+				c = 27.818515,
+				d = 120.804048,
 				e = {
 					zoom: 14,
 					center: new google.maps.LatLng(c, d - .01),
