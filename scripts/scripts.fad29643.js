@@ -14,7 +14,6 @@
 	}])
 }(), function() {
 	"use strict";
-
 	function a(a, b) {
 		function c(a) {
 			var b = [{
@@ -75,7 +74,6 @@
 	angular.module("app").factory("googleMapLoader", a), a.$inject = ["$window", "$q"]
 }(), function() {
 	"use strict";
-
 	function a(a) {
 		function b() {
 			return a("projects/projects.json").get().$promise
@@ -88,7 +86,6 @@
 	angular.module("app").factory("portfolioService", a), a.$inject = ["$resource"]
 }(), function() {
 	"use strict";
-
 	function a(a, b) {
 		function c() {
 			e.loading = !0, b.getPortfolio().then(function(a) {
@@ -114,7 +111,6 @@
 	angular.module("app").controller("AppCtrl", a), a.$inject = ["$modal", "portfolioService"]
 }(), function() {
 	"use strict";
-
 	function a(a, b, c) {
 		function d() {
 			b.dismiss("cancel")
@@ -125,7 +121,6 @@
 	angular.module("app").controller("ModalPortfolioCtrl", a), a.$inject = ["$scope", "$modalInstance", "detail"]
 }(), function() {
 	"use strict";
-
 	function a(a) {
 		function b(b, c, d) {
 			var e = angular.element(a);
@@ -145,7 +140,6 @@
 	angular.module("app").directive("navbar", a), a.$inject = ["$window"]
 }(), function() {
 	"use strict";
-
 	function a(a) {
 		function b(b, c, d) {
 			var e = function() {
@@ -177,7 +171,6 @@
 	angular.module("app").directive("resizeFix", a), a.$inject = ["$window"]
 }(), function() {
 	"use strict";
-
 	function a() {
 		function a(a, b, c) {
 			b.wallpaper({
@@ -192,7 +185,6 @@
 	angular.module("app").directive("uiWallpaper", a)
 }(), function() {
 	"use strict";
-
 	function a() {
 		function a(a, b, c) {
 			b.addClass("invisible"), b.appear();
@@ -215,7 +207,6 @@
 	angular.module("app").directive("uiAppear", a)
 }(), function() {
 	"use strict";
-
 	function a(a) {
 		function b(b, c, d) {
 			a.mapsInitialized.then(function() {
