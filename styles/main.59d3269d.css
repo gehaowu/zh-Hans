@@ -2736,7 +2736,8 @@ ul.social-icons li a:hover,ul.social-icons li a:hover:focus {
 	ul.social-icons li a {
 		width: 30px;
 		height: 30px;
-		line-height: 30px
+		line-height: 30px;
+		font-size: 30px
 	}
 }
 
