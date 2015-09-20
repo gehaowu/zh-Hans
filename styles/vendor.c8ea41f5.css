@@ -11,7 +11,7 @@ body,figure {
 	float: left
 }
 html {
-	font-family: sans-serif;
+	font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 	font-size: 10px;
@@ -204,7 +204,7 @@ td,th {
 	-moz-osx-font-smoothing: grayscale
 }
 .popover,.tooltip,body {
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif
+	font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 }
 .glyphicon-asterisk:before {
 	content: "\2a"
@@ -1612,7 +1612,7 @@ address {
 }
 
 code,kbd,pre,samp {
-	font-family: Menlo,Monaco,Consolas,"Courier New",monospace
+	font-family: "Helvetica Neue", Helvetica, "Nimbus Sans L", Arial, "Liberation Sans", "PingFang SC", "Hiragino Sans GB", "Source Han Sans CN", "Source Han Sans SC", "Microsoft YaHei", "Wenquanyi Micro Hei", "WenQuanYi Zen Hei", "ST Heiti", SimHei, "WenQuanYi Zen Hei Sharp", sans-serif;
 }
 
 code {
